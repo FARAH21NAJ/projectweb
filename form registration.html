@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+  <style>
+   *{
+   margin:0;
+   padding:0;
+    }
+	body{
+	background-image:url(backgr.png);
+	background-position:center;
+	background-size:cover;
+	font-family:cursive;
+	margin-top:40px;
+	}
+	.regform{
+	width:800px;
+	background-color:rgb(0,0,0,0.6);
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px  0px 0px;
+	}
+	
+	.main{
+	background-color:rgb(0,0,0,0.5);
+	width:800px;
+	margin:auto;
+	}
+	
+	form{
+	padding:10px;
+	}
+	
+	#name{
+	width:100%;
+	height:100px;
+	}
+	.name{
+	margin-left:25px;
+	margin-top:30px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+	}
+	.firstname{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	}
+	
+	.lastname{
+    position:relative;
+	left:417px;
+	top:-80px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	}
+	.firstlabel{
+	position:relative;
+	color:#E5E5E5;
+	text-transform:capitalize;
+	font-size:14px;
+	left:203px;
+	top:-45px;
+	}
+	.lastlabel{
+	position:relative;
+	color:#E5E5E5;
+	text-transform:capitalize;
+	font-size:14px;
+	left:170px;
+	top:-45px;
+	}
+	.age{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	
+	}
+	.email{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	
+	}
+	.password{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	}
+	.phone{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	}
+	
+	.option{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+	}
+	
+	#gen{
+	margin-left:25px;
+	
+	}
+	.radio{
+	display:inline-block;
+	padding-right:70px;
+	font-size:20px;
+	margin-left:25px;
+	margin-top:15px;
+	color:white;
+	}
+	
+	.radio input{
+	width:15x;
+	height:15px;
+	border-radius:50%;
+	cursor:pointer;
+	outline:none;
+}
+	.rad{
+	display:inline-block;
+	padding-right:70px;
+	font-size:20px;
+	margin-left:25px;
+	margin-top:15px;
+	color:white;
+	}
+	.rad input{
+	width:15x;
+	height:15px;
+	border-radius:50%;
+	cursor:pointer;
+	outline:none;
+}
+    .check{
+		display:inline-block;
+	padding-right:70px;
+	font-size:20px;
+	margin-left:25px;
+	margin-top:15px;
+	color:white;
+	}
+	.check input{
+	width:15x;
+	height:15px;
+	cursor:pointer;
+	outline:none;
+	}
+	.submit{
+	background-color:#87CEEB;
+	display:block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius:12px;
+	border:2px solid #366473;
+	padding :14px 110px;
+	outline:none;
+	color:white;
+	cursor:pointer;
+	transition:0.25px;
+	}
+	.reset{
+	background-color:#87CEEB;
+	display:block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius:12px;
+	border:2px solid #366473;
+	padding :14px 110px;
+	outline:none;
+	color:white;
+	cursor:pointer;
+	transition:0.25px;
+	}
+	.submit:hover{
+	background-color:#5390F5;}
+	.reset:hover{
+	background-color:#5390F5;}
+</style>
+</head>
+<body>
+<div class="regform"><h1>Registration</h1></div>
+
+<div class="main" >
+<form method="POST" action="form_server.php">
+<div id="name">
+<h2 class="name">Name</h2> 
+<label>
+<input class="firstname" type="text" name="name"><br>
+</label>
+</div>
+
+<h2 class="name">Age</h2>
+
+<input class="age" type="number" name="age" min="1" step="1" >
+
+<h2 class="name">E-mail</h2>
+<input class="email" type="email" name="em"  required>
+
+
+<h2 class="name">password</h2>
+<input class="password" type="password" name="pass"  maxlength="10" required>
+
+<h2 class="name">Phone number</h2>
+<input class="phone" type="tel" name="t" pattern="07\d{8}" placeholder="07########">
+
+
+<h2 class="name">City</h2>
+<select class="option"name="c">
+<option >-selet a a city-</option>
+<option value="amman">Amman</option>
+<option value="zarqa">Zarqa</option>
+<option value="irbid">Irbid</option>
+<option value="albalqa">Al-Balqa</option>
+<option value="jerash">Jerash</option>
+<option value="ajloun">Ajloun</option>
+<option value="madaba">Madaba</option>
+<option value="mafraq">Mafraq</option>
+<option value="karak">Karak</option>
+<option value="tafilah">Tafilah</option>
+<option value="ma'an">Ma'an</option>
+<option value="aqaba">Aqaba</option>
+</select>
+
+
+<h2 class="name" id="gen">Gender</h2>
+<label class="radio" >
+<input  class="r1"type="radio" name="g" value="male">Male
+</label>
+<label class="radio" >
+
+<input class="r1" type="radio" name="g" value="female" >Female
+
+</label>
+
+
+
+<h2 class="name">Session location</h2>
+
+<label class="rad">
+<input type="radio" name="location" value="our clinc">Our Clinic
+</label>
+<label class="rad">
+<input type="radio" name="location" value="your house">Your House
+</label>
+
+
+
+<h2 class="name">type of treatment</h2>
+<div class="check">
+<label>
+<input type="radio" name="treatment" value="physical  therapy sessions">physical therapy sessions
+</label>
+<br/>
+
+<label>
+<input type="radio" name="treatment" value="Hearing and speech therapy">Hearing and speech therapy
+</label>
+<br/>
+
+<label>
+<input type="radio" name="treatment" value="Examination of the prosthetics">Examination of the prosthetics
+</label>
+<br/>
+
+<label>
+<input type="radio" name="treatment" value="psychotherapy sessions">psychotherapy sessions
+</label>
+</div>
+
+
+<input class="submit" type="submit" value="book">
+<input class="reset" type="reset" value="cancel">
+
+</form>
+
+</body>
+</html>

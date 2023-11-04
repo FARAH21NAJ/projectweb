@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Links</title>
+<meta charset="utf-8">
+<style >
+body{
+	
+	background-image:url(bb2.png);
+	background-position:center;
+	background-size:cover;
+	font-family:cursive;;
+	margin-top:40px;
+	font-size:25px;
+	font-weight:bold;
+	}
+form{text-align:center}
+
+	.update{
+	background-color:#87CEEB;
+	
+	text-align:center;
+	border-radius:12px;
+	border:2px solid #366473;
+	color:white;
+	cursor:pointer;
+	
+	}
+	.update:hover{
+	background-color:#5390F5;}
+	.update:hover{
+	background-color:#5390F5;}
+</style>
+</head>
+<body>
+
+<form method="POST" action="update.php">
+
+<label><h3>Patient Name:</h3>
+<input type="text" name="name" >
+</label>
+<br>
+
+<label><h3>Age:</h3>
+<input type="number" name="age" min="1" step="1" >
+</label>
+<br/>
+
+
+<label><h3>Phone number:</h3>
+<input type="tel" name="phone" pattern="07\d{8}" placeholder="07########">
+<br>
+
+
+<label><h3>Session location:</h3> 
+<input type="radio" name="location" value="Our Clinic">Our Clinic
+</label>
+<label>
+<input type="radio" name="location" value="Your House">Your House
+</label>
+<br>
+
+
+<h3>type of treatment:</h3>
+<label> <br/>
+<input type="radio" name="t" value="physical therapy sessions">physical therapy sessions
+</label>
+<br/>
+
+<label>
+<input type="radio" name="t" value="Hearing and speech therapy">Hearing and speech therapy
+</label>
+<br/>
+
+<label>
+<input type="radio" name="t" value="Examination of the prosthetics">Examination of the prosthetics
+</label>
+<br/>
+
+<label>
+<input type="radio" name="t" value="Psychotherapy sessions">Psychotherapy sessions
+</label>
+<br/>
+
+<br/>
+<input class="update" type="submit" value="update">
+
+
+</form>
+
+</body>
+</html>
+
+
+</form>
+</html>

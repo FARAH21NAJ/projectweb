@@ -1,0 +1,196 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="C:\Users\User\Desktop\project web\design.css" type="text/css" />
+<style>
+
+
+</style>
+</head>
+<body>
+<h1>Al Hayat Health care center</h1>
+
+<p style="text-indent:20px">Because we are living, we will give you a new life through the services we provide
+We are Al Hayat Center.
+We allow you to book 
+treatment sessions at any time and in various places. 
+For your complete comfort, we have provided you with
+ sessions  in our clinic and sessions in your homes and
+ with the most skilled specialists of your choice.</p>
+ 
+ <h4>we present:</h4>
+ <br><br>
+<nav>
+ <figure> 
+<ul>
+<li><a href="C:\Users\User\Desktop\project web\project_2.html" >
+	<figcaption>physical therapy sessions</figcaption>
+	<img src ="ph.jpg" />
+	</li></a>
+	
+<br>
+<li><a href="C:\Users\User\Desktop\project web\project_3.html" ><figcaption>Hearing and speech therapy</figcaption>
+    <img src ="sp.jpg" />
+   </li></a>
+<br>
+<li><a href="C:\Users\User\Desktop\project web\project_4.html" ><figcaption>Examination of the prosthetics</figcaption>
+<img src ="MicrosoftTeams-image (13).png" />
+</li></a>
+<br>
+<li><a href="C:\Users\User\Desktop\project web\project_5.html" ><figcaption>psychotherapy sessions</figcaption>
+<img src ="psycho1.jpg" />
+</li><a>
+</ul>
+ </figure>
+</nav>
+<br><br>
+---->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<style>
+body{text-align:center;margin-top:100px;
+background-color:PaleTurquoise;
+background-image:url(backgr.png);background-size:100%;
+background-repeat:no-repeat;
+
+font-family:Monospace;font-size:20px;
+}
+form{background-color:#EFEBE9;margin-left:500px;margin-right:500px;}
+
+</style>
+</head>
+<body>
+
+
+<form method="" action="">
+
+<label>Patient Name
+<input type="text" name="name" size="40">
+</label>
+<br><br>
+
+Age:
+<label>
+<input type="number" name="age" min="1" step="1" >
+</label>
+<br/><br/>
+Gender:<br/>
+<label>
+<input type="radio" name="g" value="m">Male
+</label>
+<label>
+<input type="radio" name="g" value="f" >Female
+</label>
+<br><br>
+<label>E-mail
+<input type="email" name="e" size="40" required>
+</label>
+<br><br>
+
+<label>password
+<input type="password" name="p" size="20" maxlength="10" required>
+</label>
+<br><br>
+
+<label>Phone number
+<input type="tel" name="t" pattern="07\d{8}" placeholder="07########">
+<br><br>
+
+<label>City
+<select name="c">
+<option>-selet a a city-</option>
+<option value="amman">Amman</option>
+<option value="zarqa">Zarqa</option>
+<option value="irbid">Irbid</option>
+<option value="albalqa">Al-Balqa</option>
+<option value="jerash">Jerash</option>
+<option value="ajloun">Ajloun</option>
+<option value="madaba">Madaba</option>
+<option value="mafraq">Mafraq</option>
+<option value="karak">Karak</option>
+<option value="tafilah">Tafilah</option>
+<option value="ma'an">Ma'an</option>
+<option value="aqaba">Aqaba</option>
+</select>
+</label>
+<br><br>
+
+Session location: <br/>
+<label>
+<input type="radio" name="location" value="c">Our Clinic
+</label>
+<label>
+<input type="radio" name="location" value="h">Your House
+</label>
+<br><br>
+
+
+type of treatment: <br/>
+<label>
+<input type="checkbox" name="ph" value="physical">physical therapy sessions
+</label>
+<br/>
+
+<label>
+<input type="checkbox" name="hs" value="hearing">Hearing and speech therapy
+</label>
+<br/>
+
+<label>
+<input type="checkbox" name="ex" value="prosthetics">Examination of the prosthetics
+</label>
+<br/>
+
+<label>
+<input type="checkbox" name="psy" value="psychotherapy">psychotherapy sessions
+</label>
+<br/>
+
+<br/><br/>
+<input type="submit" value="book">
+<input type="reset" value="cancel">
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************
+
+:<br/> your Age is ".$_POST["age"] ."<br/> 
+                                     your Gender is :".$_POST["g"]."<br/> 
+									 you from :".$_POST["c"]. "<br/>
+									 you want to have a session in :".$_POST["location"]."<br/
+									 >The type of treatment you want to benefit from :".$_POST["treatment"]."</br>");
